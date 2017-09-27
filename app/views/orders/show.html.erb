@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>姓名:</strong>
+  <%= @order.Name %>
+</p>
+
+<p>
+  <strong>電話:</strong>
+  <%= @order.Tel %>
+</p>
+
+<p>
+  <strong>餐點:</strong>
+  <%= @order.Dish %>
+</p>
+
+<p>
+  <strong>價格:</strong>
+  <%= @order.Price %>
+</p>
+
+<p>
+  <strong>數量:</strong>
+  <%= @order.Number %>
+</p>
+
+<%= link_to '修改', edit_order_path(@order) %> |
+<%= link_to '返回', orders_path %>
